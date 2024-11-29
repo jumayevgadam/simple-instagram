@@ -8,7 +8,7 @@ migration_create:
 	migrate create -ext sql -dir internal/infrastructure/migrations/ -seq table_schema
 
 migration_up:
-	migrate -path internal/infrastructure/migrations/ -database "postgresql://postgres:12345@localhost:5432/instagram_db?sslmode=disable" -verbose up
+	migrate -path internal/infrastructure/migrations/ -database "postgresql://postgres:123456@localhost:5432/instagram_db?sslmode=disable" -verbose up
 
 migration_force:
-	migrate -path internal/infrastructure/migrations/ -database "postgresql://postgres:12345@localhost:5432/instagram_db?sslmode=disable" force 1
+	migrate -path internal/infrastructure/migrations/ -database "postgresql://postgres:123456@localhost:5432/instagram_db?sslmode=disable" force 1
